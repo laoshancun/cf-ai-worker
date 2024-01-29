@@ -1,0 +1,20 @@
+{
+	"name": "worker-wandering-queen-b9d5",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"deploy": "wrangler deploy",
+		"dev": "wrangler dev --remote",
+		"start": "wrangler dev",
+		"format": "prettier --write '**/*.{js,ts,css,json,md}'"
+	},
+	"devDependencies": {
+		"@cloudflare/ai": "^1.0.47",
+		"prettier": "^3.2.4",
+		"wrangler": "^3.0.0"
+	},
+	"dependencies": {
+		"itty-router": "^4.0.27",
+		"serverless-cloudflare-workers": "^1.2.0"
+	}
+}

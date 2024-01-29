@@ -1,0 +1,29 @@
+###
+POST http://llama2.gitry.com/v1/chat/completion
+Content-Type: application/json
+Authorization: API_KEY
+
+{
+    "messages":[
+        {"role":"assistent","content":"you are moss."},
+        {"role":"user","content":"hello world."}
+    ]
+}
+
+###
+POST https://llama2.gitry.com/v1/completion
+Authorization: API_KEY
+Content-Type: application/json
+
+{
+    "prompt":"hello world."
+}
+
+###
+POST https://llama2.gitry.com/v1/images/generations
+Content-Type: application/json
+Authorization: API_KEY
+
+{
+    "prompt":"(masterpiece, best quality),1girl with long white hair sitting in a field of green plants and flowers, her hand under her chin, warm lighting, white dress, blurry foreground"
+}
